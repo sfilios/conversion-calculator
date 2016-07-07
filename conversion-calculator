@@ -1,0 +1,16 @@
+##molar conversion calculator
+print "how many nanomoles?"
+one=input()
+print "what concentration, in micromolar, do you want?"
+two=input()
+
+def diluter(nmol, conc):
+    mol=nmol*10**-9
+    ucon=conc*10**-6
+    liters=mol/ucon
+    final=liters*10**6
+    return final
+    
+concentration=diluter(one, two)
+print "add this many microliters"
+print concentration
